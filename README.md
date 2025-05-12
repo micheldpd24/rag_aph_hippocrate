@@ -40,6 +40,32 @@
 
 ---
 
+## 🗂 Structure du Projet
+
+```
+.
+├── data/
+│   ├── aphorisms_extracted.json    # Aphorismes bruts extraits
+│   ├── hippocrates_questions.json  # Questions prédéfinies
+│   └── hippocrate_rag_data.json    # Données préparées pour le RAG
+├── models/
+│   └── config_schema.py            # Schéma Pydantic de configuration
+├── prepare_corpus/
+│   └── process_pdf.ipynb           # Notebook d'extraction du PDF
+├── rag/
+│   └── hippocrag.py                # Moteur RAG principal
+├── templates/
+│   └── index.html                  # Template Jinja2 de l’interface
+├── app.py                          # Point d’entrée Flask
+├── config_loader.py                # Chargement du YAML
+├── Dockerfile                      # Définition du conteneur
+├── docker-compose.yml              # Orchestration
+├── rag_config.yaml                 # Fichier de configuration global
+└── requirements.txt                # Dépendances Python
+```
+
+---
+
 ## 🤖 Fonctionnement Technique
 
 ### 🧠 Base de Connaissances
@@ -61,7 +87,7 @@ Ils sont découpés et stockés dans :
 ### 🧾 Génération de Réponse
 La réponse est générée par un **modèle LLM open-source (Mistral)** via **Ollama**, reformulée en français à partir des extraits trouvés.
 
-### 📊 Diagramme Mermaid du Workflow RAG
+### 📊 Diagramme du Workflow RAG
 
 ```mermaid
 graph TD
@@ -209,31 +235,6 @@ python app.py
 
 Accédez ensuite à l’interface via : [http://localhost:5000](http://localhost:5000)
 
----
-
-## 🗂 Structure du Projet
-
-```
-.
-├── data/
-│   ├── aphorisms_extracted.json    # Aphorismes bruts extraits
-│   ├── hippocrates_questions.json  # Questions prédéfinies
-│   └── hippocrate_rag_data.json    # Données préparées pour le RAG
-├── models/
-│   └── config_schema.py            # Schéma Pydantic de configuration
-├── prepare_corpus/
-│   └── process_pdf.ipynb           # Notebook d'extraction du PDF
-├── rag/
-│   └── hippocrag.py                # Moteur RAG principal
-├── templates/
-│   └── index.html                  # Template Jinja2 de l’interface
-├── app.py                          # Point d’entrée Flask
-├── config_loader.py                # Chargement du YAML
-├── Dockerfile                      # Définition du conteneur
-├── docker-compose.yml              # Orchestration
-├── rag_config.yaml                 # Fichier de configuration global
-└── requirements.txt                # Dépendances Python
-```
 
 ---
 
