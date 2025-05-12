@@ -1,0 +1,37 @@
+app:
+  name: "HippocRAG"
+  debug: true
+  host: "0.0.0.0"
+  port: 5000
+  secret_key: "change_this_secret"
+  data_dir: "data"
+  cache_dir: "cache"
+  question_cache_file: "questions_cache.json"
+
+rag:
+  model:
+    name: "dangvantuan/sentence-camembert-large"
+    # name: "distiluse-base-multilingual-cased-v1"
+    normalize_embeddings: true
+  index:
+    json_path: "data/hippocrate_rag_data.json"
+    faiss_path: "hippocrate.index"
+    build_on_startup: true
+    top_k: 6
+  llm:
+    provider: "ollama"
+    endpoint: "http://localhost:11434/api/generate"
+    model: "mistral"
+
+security:
+  allowed_tags:
+    - p
+    - br
+    - h4
+    - h5
+    - ul
+    - ol
+    - li
+    - em
+    - strong
+    - blockquote
