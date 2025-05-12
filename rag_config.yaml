@@ -11,7 +11,6 @@ app:
 rag:
   model:
     name: "dangvantuan/sentence-camembert-large"
-    # name: "distiluse-base-multilingual-cased-v1"
     normalize_embeddings: true
   index:
     json_path: "data/hippocrate_rag_data.json"
