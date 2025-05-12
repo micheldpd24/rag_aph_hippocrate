@@ -1,0 +1,14 @@
+
+ipykernel 
+PyMuPDF
+pandas
+matplotlib
+requests
+bleach
+flask
+pydantic
+faiss-cpu
+sentence-transformers
+protobuf
+tiktoken
+sentencepiece
