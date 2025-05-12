@@ -61,6 +61,41 @@ Ils sont découpés et stockés dans :
 ### 🧾 Génération de Réponse
 La réponse est générée par un **modèle LLM open-source (Mistral)** via **Ollama**, reformulée en français à partir des extraits trouvés.
 
+### 📊 Diagramme Mermaid du Workflow RAG
+
+```mermaid
+graph TD
+    A[Question utilisateur] --> B[Encodage vectoriel (CamemBERT)]
+    B --> C[Recherche dans index FAISS]
+    C --> D[Récupération des chunks pertinents]
+    D --> E[Appel LLM (Mistral) → réponse générée]
+```
+
+---
+
+### 🧾 Explication détaillée des étapes
+
+1. **[Question utilisateur]**  
+   - L'utilisateur pose une question en langage naturel.
+   - Exemple : *"Quel est le rôle du régime dans la santé selon Hippocrate ?"*
+
+2. **[Encodage vectoriel (CamemBERT)]**
+   - La question est encodée en vecteur grâce à un modèle sémantique comme **CamemBERT** ou **Sentence CamemBERT large**.
+   - Permet de comparer la requête aux embeddings précalculés des aphorismes.
+
+3. **[Recherche dans index FAISS]**
+   - Le moteur de recherche vectorielle (FAISS) compare le vecteur de la question avec les embeddings stockés dans l’index.
+   - Retourne les `top_k` passages les plus proches (ex: 6 fragments).
+
+4. **[Récupération des chunks pertinents]**
+   - Les textes associés aux vecteurs trouvés sont récupérés depuis la base JSON.
+   - Ces chunks contiennent les informations nécessaires pour répondre à la question.
+
+5. **[Appel LLM (Mistral) → réponse générée]**
+   - Un prompt est construit à partir de la question et des contextes trouvés.
+   - Le LLM (`mistral`, via Ollama) génère une réponse structurée en français.
+   - Réponse renvoyée à l’utilisateur sous forme HTML ou texte brut.
+
 ---
 
 ## 🧰 Technologies Utilisées
@@ -250,11 +285,11 @@ Fichier central : `rag_config.yaml`
 | `top_k`               | `6`                                      |
 
 ### 🤖 LLM (Modèle de Génération)
-| Paramètre   | Valeur par défaut                          |
-|-------------|--------------------------------------------|
-| `provider`  | `"ollama"`                                 |
-| `endpoint`  | `"http://localhost:11434/api/generate"`    |
-| `model`     | `"mistral"`                                |
+| Paramètre   | Valeur par défaut / Description                                                                 |
+|-------------|--------------------------------------------------------------------------------------------------|
+| `provider`  | `"ollama"`<br>→ Fournisseur du modèle LLM utilisé                                               |
+| `endpoint`  | - Local : `"http://localhost:11434/api/generate"`<br>→ Si lancé manuellement sur la machine<br><br>- Container : `"http://ollama:11434/api/generate"`<br>→ Si lancé via Docker Compose |
+| `model`     | `"mistral"`<br>→ Modèle LLM utilisé pour générer les réponses                                  |
 
 ### 🔐 Sécurité
 Balises HTML autorisées : `<p>`, `<h4>`, `<ul>`, `<em>`, `<strong>`, `<blockquote>`  
