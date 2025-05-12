@@ -65,10 +65,10 @@ La réponse est générée par un **modèle LLM open-source (Mistral)** via **Ol
 
 ```mermaid
 graph TD
-    A[Question utilisateur] --> B[Encodage vectoriel (CamemBERT)]
-    B --> C[Recherche dans index FAISS]
-    C --> D[Récupération des chunks pertinents]
-    D --> E[Appel LLM (Mistral) → réponse générée]
+    A(Question utilisateur) --> B(Encodage vectoriel *CamemBERT*)
+    B --> C(Recherche dans l'*index FAISS*)
+    C --> D(Récupération des chunks pertinents)
+    D --> E(Appel LLM *Mistral* → réponse générée)
 ```
 
 ---
