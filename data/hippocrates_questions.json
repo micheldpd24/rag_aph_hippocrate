@@ -1,0 +1,49 @@
+[
+  {"id": "Q1", "theme": "principes", "text": "Quels sont les principes fondamentaux de la médecine selon Hippocrate ?"},
+  {"id": "Q2", "theme": "principes", "text": "Comment Hippocrate conçoit-il l’art médical comme savoir pratique ?"},
+  {"id": "Q3", "theme": "principes", "text": "Quelle est la place de l'observation dans la méthode hippocratique ?"},
+  {"id": "Q4", "theme": "principes", "text": "En quoi consiste la fameuse séparation entre médecine et superstition chez Hippocrate ?"},
+  {"id": "Q5", "theme": "principes", "text": "Comment la médecine hippocratique articule-t-elle raison et expérience ?"},
+
+  {"id": "Q6", "theme": "éthique", "text": "Quelle est la signification de la célèbre maxime : « La vie est courte, l'art est long » ?"},
+  {"id": "Q7", "theme": "éthique", "text": "Comment Hippocrate conçoit-il le rôle du médecin dans la maladie et la guérison ?"},
+  {"id": "Q8", "theme": "éthique", "text": "Comment les aphorismes d’Hippocrate reflètent-ils une vision éthique de la médecine ?"},
+  {"id": "Q9", "theme": "éthique", "text": "Quelle place le respect du patient occupe-t-il dans la pensée hippocratique ?"},
+  {"id": "Q10", "theme": "éthique", "text": "Comment Hippocrate aborde-t-il les limites morales de l’intervention médicale ?"},
+
+  {"id": "Q11", "theme": "nature", "text": "Quels éléments naturels ou environnementaux sont fréquemment évoqués par Hippocrate dans ses aphorismes ?"},
+  {"id": "Q12", "theme": "nature", "text": "Quel rapport Hippocrate établit-il entre la nature humaine et la médecine ?"},
+  {"id": "Q13", "theme": "nature", "text": "Comment les aphorismes abordent-ils la question du destin ou de la fatalité en médecine ?"},
+  {"id": "Q14", "theme": "nature", "text": "Comment Hippocrate prend-il en compte les saisons dans l’apparition et le traitement des maladies ?"},
+  {"id": "Q15", "theme": "nature", "text": "Quelle place la nature tient-elle dans le processus de guérison selon Hippocrate ?"},
+
+  {"id": "Q16", "theme": "diagnostic", "text": "Comment Hippocrate définit-il la santé et la maladie ?"},
+  {"id": "Q17", "theme": "diagnostic", "text": "Quels sont les signes les plus importants pour établir un pronostic selon Hippocrate ?"},
+  {"id": "Q18", "theme": "diagnostic", "text": "Quelle conception du temps et de l’opportunité thérapeutique ressort de ses aphorismes ?"},
+  {"id": "Q19", "theme": "diagnostic", "text": "Quel rôle accorde-t-il à l’observation quotidienne du patient ?"},
+  {"id": "Q20", "theme": "diagnostic", "text": "Comment les aphorismes d’Hippocrate traitent-ils de la variabilité des symptômes selon les individus ?"},
+
+  {"id": "Q21", "theme": "traitement", "text": "Quels traitements Hippocrate recommande-t-il pour les fièvres aiguës ?"},
+  {"id": "Q22", "theme": "traitement", "text": "Quelle place occupe l’alimentation dans les soins médicaux selon Hippocrate ?"},
+  {"id": "Q23", "theme": "traitement", "text": "Comment Hippocrate aborde-t-il la question des maladies chroniques dans ses aphorismes ?"},
+  {"id": "Q24", "theme": "traitement", "text": "Quelles recommandations donne-t-il pour la convalescence des malades ?"},
+  {"id": "Q25", "theme": "traitement", "text": "Quel usage fait Hippocrate des saignées, bains ou régimes dans la thérapeutique ?"},
+
+  {"id": "Q26", "theme": "expérience", "text": "Que disent les aphorismes sur l’importance de l’expérience clinique par rapport à la théorie ?"},
+  {"id": "Q27", "theme": "expérience", "text": "Comment Hippocrate distingue-t-il les savoirs acquis par l’expérience des conjectures ?"},
+  {"id": "Q28", "theme": "expérience", "text": "En quoi l’erreur du médecin est-elle liée à son manque d’expérience selon Hippocrate ?"},
+  {"id": "Q29", "theme": "expérience", "text": "Quelle est la place de l’apprentissage empirique dans les aphorismes ?"},
+  {"id": "Q30", "theme": "expérience", "text": "Comment la répétition des cas observés structure-t-elle le raisonnement médical hippocratique ?"},
+
+  {"id": "Q31", "theme": "enseignement", "text": "Quels conseils donne-t-il aux jeunes médecins ou aux apprentis ?"},
+  {"id": "Q32", "theme": "enseignement", "text": "Comment Hippocrate conçoit-il la transmission du savoir médical ?"},
+  {"id": "Q33", "theme": "enseignement", "text": "Quel est le rôle du maître dans l’apprentissage médical selon Hippocrate ?"},
+  {"id": "Q34", "theme": "enseignement", "text": "Comment la rigueur intellectuelle est-elle valorisée dans l’enseignement médical ?"},
+  {"id": "Q35", "theme": "enseignement", "text": "Pourquoi Hippocrate insiste-t-il sur la patience et l’endurance dans l’étude de la médecine ?"},
+
+  {"id": "Q36", "theme": "prévention", "text": "Comment Hippocrate conçoit-il l’équilibre du corps et de l’âme dans la prévention des maladies ?"},
+  {"id": "Q37", "theme": "prévention", "text": "Quels conseils donne-t-il pour maintenir la santé au quotidien ?"},
+  {"id": "Q38", "theme": "prévention", "text": "Quelle est la relation entre hygiène de vie et longévité dans les aphorismes ?"},
+  {"id": "Q39", "theme": "prévention", "text": "Comment les saisons et le climat influencent-ils les pratiques préventives ?"},
+  {"id": "Q40", "theme": "prévention", "text": "Quelle est la fonction des purges, des régimes et de l’exercice dans la médecine préventive d’Hippocrate ?"}
+]
