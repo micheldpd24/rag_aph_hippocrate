@@ -1,0 +1,24 @@
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: my-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  rag:
+    build: .
+    container_name: my-rag
+    ports:
+      - "5000:5000"
+    # environment:
+      #- OLLAMA_HOST=http://ollama:11434/api/generate
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
