@@ -1,0 +1,10 @@
+faiss-cpu
+flask
+pydantic
+sentence-transformers
+protobuf
+tiktoken
+sentencepiece
+requests
+numpy
+bleach
