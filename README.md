@@ -2,7 +2,7 @@
 > “Je jure par Apollon médecin, par Asclépios, Hygie et Panacée…”  
 > — Serment d’Hippocrate
 
-[![License](https://img.shields.io/github/license/micheldpd/hippocrate-rag)](LICENSE)
+[![License](https://img.shields.io/github/license/micheldpd/rag_aph_hippocrate)](LICENSE)
 
 🧠 Explorez les fondements de la médecine occidentale grâce à un système **RAG (Retrieval-Augmented Generation)** moderne, alimenté par les *Aphorismes d’Hippocrate*.
 
@@ -170,6 +170,9 @@ cd rag_aph_hippocrate
 
 ### 2. 🐳 Avec Docker Compose (Recommandé)
 
+Assurer vous d'abord que dans le fichier configuration rag_config.yaml nous avons bien:
+rag: llm: endpoint: "http://ollama:11434/api/generate"
+
 Lancez l’application en une seule commande grâce à Docker Compose :
 
 ```bash
@@ -225,7 +228,12 @@ Toujours dans ce terminal :
 ollama run mistral
 ```
 
-#### e. Lancer l’application Flask
+#### e. Configuration du endpoint du llm du RAG:
+
+Assurer vous d'abord que dans le fichier configuration rag_config.yaml nous avons bien:
+rag / llm / endpoint: "http://localhost:11434/api/generate"
+
+#### f. Lancer l’application Flask
 
 Revenez au terminal principal et exécutez :
 
