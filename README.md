@@ -45,7 +45,6 @@
 ```
 .
 ├── data/
-│   ├── aphorisms_extracted.json    # Aphorismes bruts extraits
 │   ├── hippocrates_questions.json  # Questions prédéfinies
 │   └── hippocrate_rag_data.json    # Données préparées pour le RAG
 ├── models/
@@ -61,7 +60,8 @@
 ├── Dockerfile                      # Définition du conteneur
 ├── docker-compose.yml              # Orchestration
 ├── rag_config.yaml                 # Fichier de configuration global
-└── requirements.txt                # Dépendances Python
+├── requirements.txt                # Dépendances python pour exécuter le projet dans un conteneur docker
+└── requirements_pjt.txt            # Dépendances Python pour executer le projet en local
 ```
 
 ---
