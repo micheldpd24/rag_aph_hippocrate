@@ -230,7 +230,7 @@ ollama run mistral
 
 #### e. Configuration du endpoint du llm du RAG:
 
-Assurer vous d'abord que dans le fichier configuration rag_config.yaml nous avons bien:
+Assurez vous d'abord que dans le fichier configuration rag_config.yaml vous avez bien:
 rag / llm / endpoint: "http://localhost:11434/api/generate"
 
 #### f. Lancer l’application Flask
@@ -350,5 +350,5 @@ MIT License – Voir le fichier [LICENSE](LICENSE)
 
 ## 🧑‍💻 Auteur
 
-*micheldpd*  
-Ingénieur ML passionné par l’histoire de la médecine
+*Michel Douglas P*  
+Ingénieur ML. 
