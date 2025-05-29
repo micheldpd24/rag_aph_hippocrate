@@ -34,7 +34,7 @@
 - Première étape vers la création de référentiels sémantiques historiques.
 - Ouvre la voie à l'analyse d'autres œuvres majeures (Galien, Avicenne, etc.).
 
-### 💡 Exemple Concret d’un RAG Appliqué à un Corpus Ancien
+### 💡 Exemple Concret d’un RAG Appliqué à un Corpus de Médécine Ancienne
 - Démonstration pratique de la chaîne complète RAG, du PDF au serveur web.
 - Documentation pédagogique claire et reproductible.
 
